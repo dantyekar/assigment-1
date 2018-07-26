@@ -54,7 +54,7 @@ var loadFoodDefault = function(){
 							data[i].imgUrl +
 							"' alt='Card image'><div class='card-body'><h4 class='card-title'>" + 
 							data[i].foodName +
-							"</h4><p class='card-text'>" +
+							"</h4><p class='card-text foodCategory'>" +
 							data[i].foodCategory +
 							"</p><p class='card-text price'>$" +
 							data[i].foodPrice +
@@ -92,7 +92,7 @@ var loadFoodWithPrice = function(content, price1, price2){
 							data[i].imgUrl +
 							"' alt='Card image'><div class='card-body'><h4 class='card-title'>" + 
 							data[i].foodName +
-							"</h4><p class='card-text'>" +
+							"</h4><p class='card-text foodCategory'>" +
 							data[i].foodCategory +
 							"</p><p class='card-text price'>$" +
 							data[i].foodPrice +
