@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>Eureka Caffee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <script src="data.js" ></script>
+  <script src="scripts.js" ></script>
+  
+</head>
+
+
+<body>
+
+<div class="topHeader">
+  <div class="navbarStuffRelatedTop">
+    <nav class="navbar navbar-static-top navbar-expand-lg navbar-light">
+      <div>
+        <a href="#"><img src="https://www.iconsdb.com/icons/preview/black/coffee-7-xxl.png" width="30" height="30" class="d-inline-block align-top logoImg" alt=""></a>
+        <a id="logoText" class="navbar-brand texty" href="./index.html">
+          EUREKA 
+          <br>
+          CAFFEE
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse bg-custom" id="navbarNav">
+        <ul id="menuTop" class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="" class="nav-link texty"> &nbsp; Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link texty"><span class="middot" style="color:orange">&middot;</span> &nbsp; About</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link texty"><span class="middot" style="color:orange">&middot;</span> &nbsp; Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link texty"><span class="middot" style="color:orange">&middot;</span> &nbsp; Contact</a>
+          </li>
+        </ul>    
+      </div>
+    </nav>
+  </div>
+
+  <div class="jumbotron text-center">
+    <div>
+	    <h1 class="title texty">Ordering food</h1>
+      <img src="https://forums.autodesk.com/autodesk/attachments/autodesk/706/80968/2/0001.png" style="filter:invert(100%);" width="50px" height="50px"><img src="https://forums.autodesk.com/autodesk/attachments/autodesk/706/80968/2/0001.png" style="filter:invert(100%);" width="50px" height="50px"><i class="fas fa-utensils"></i><img src="https://forums.autodesk.com/autodesk/attachments/autodesk/706/80968/2/0001.png" style="filter:invert(100%);" width="50px" height="50px"><img src="https://forums.autodesk.com/autodesk/attachments/autodesk/706/80968/2/0001.png" style="filter:invert(100%);" width="50px" height="50px">
+      <br><br>
+      <p class="description texty">Our menu contains a range of all sorts of foods that might be just right for you.</p>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar bg-light sortingNav">
+ <div class="mr-auto"> 
+  <div class="dropdown">
+    <button class="dropbtn">Category 
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Sorting 
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Vegetarian 
+      <i class="fa fa-angle-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+    </div>
+  </div>
+ </div>
+
+  <div class="ml-auto" style="align-content: center;">
+    <div class="score">
+      Price: 
+    </div> 
+    <div id="sliderValue1"class="score">
+      2
+    </div>
+    <div class="score">
+        <div class="slidecontainer">
+          <div class="range-slider">
+           <!-- <span>Price Range</span>
+            <span class="rangeValues"></span><br><br>
+            -->
+            <input value="1" min="1" max="100" step="1" type="range">
+            <input value="100" min="1" max="100" step="1" type="range">
+          </div>
+        </div>
+    </div>
+    <div id="sliderValue2" class="score">
+      2
+    </div>
+  </div>
+</nav>
+
+<br>
+<div class="foodContents">
+  <div id="foodTable" class="container-fluid">
+
+  
+<!--<div class="card" style="width:250px">
+  <img class="card-img-top" src="https://gvcdn.akamaized.net/wp-content/uploads/media/images/ext/604213121/vegetables-on-plate.jpg?20180717.0" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <p class="card-text price">$24.00</p>
+  </div>
+</div>-->
+  </div>
+</div>
+
+<script src="./scripts.js"></script>
+
+</body>
+</html>
